@@ -42,11 +42,7 @@ if(isset($_GET['temprature'])){
         <br />
 
         <?php
-        $file = fopen("temprature.txt", "r") or die("can't open file");
-        $readed_data = fread($file);
-        fclose($file);
-
-        echo $readed_data
+        echo get_file_contents("temprature.txt")
         ?>
 
   </body>
