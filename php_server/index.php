@@ -17,7 +17,7 @@ if(isset($_GET['bulb'])){
 
 if(isset($_GET['temprature'])){
 
-  $temprature = $_GET['temprature']
+  $temprature = $_GET['temprature'];
 
   $file = fopen("temprature.txt", "w") or die("can't open file");
   fwrite($file, $temprature);
